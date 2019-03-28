@@ -74,6 +74,7 @@ color:#333;
 }
 
 QToolBar {
+/*background-color: transparent;*/
 background-color: #000000;
 border:0px solid #333;
 padding:1;
@@ -97,20 +98,22 @@ QToolBar > QToolButton {
         /* border-image: url(':/images/downArrow') 0 0 0 0 stretch stretch; */
 }
 
-/*QToolBar > QToolButton:checked {
-background-color: qlineargradient(x1:0, x2: 1, stop: 0 #ffffff, stop: 0.07 #ffffff, stop: 0.0701 #0c0c0c, stop: 1 #0c0c0c);
-color:#fff;
-}*/
+QToolBar > QToolButton:checked {
+background-color: rgba(0,0,0,50);
+/*background-color: qlineargradient(x1:0, x2: 1, stop: 0 #ffffff, stop: 0.07 #ffffff, stop: 0.0701 #0c0c0c, stop: 1 #0c0c0c);*/
+/*color:#fff;*/
+}
 
 /* QToolBar > QToolButton:hover:!selected { */
-/*QToolBar > QToolButton:hover {
-background-color: qlineargradient(x1:0, x2: 1, stop: 0 #ffffff, stop: 0.07 #ffffff, stop: 0.0701 #0c0c0c, stop: 1 #0c0c0c);
-color:#fff;
-}*/
+QToolBar > QToolButton:hover {
+background-color: rgba(0,0,0,50);
+/*background-color: qlineargradient(x1:0, x2: 1, stop: 0 #ffffff, stop: 0.07 #ffffff, stop: 0.0701 #0c0c0c, stop: 1 #0c0c0c);*/
+/*color:#fff;*/
+}
 
-/*QToolBar > QToolButton#ToolbarSpacer:hover:!selected {
+QToolBar > QToolButton#ToolbarSpacer:hover:!selected {
 background-color: #0c0c0c; /* Do not highlight placeholder on hover */
-}*/
+}
 
 /*QToolBar > QToolButton:pressed {
 background-color: qlineargradient(x1:0, x2: 1, stop: 0 #00a300, stop: 0.07 #00a300, stop: 0.0701 #0c0c0c, stop: 1 #0c0c0c);
@@ -918,7 +921,8 @@ border:1px solid #0c0c0c;
 /* Headers */
 QLabel#labelOverviewHeaderLeft {
 font-weight:bold;
-font-size:30px;
+font-size:20px;
+/*font-size:30px;*/
 background-color:#ffffff;
 }
 
@@ -953,22 +957,38 @@ background-color:#ffffff;
 
 QWidget .QFrame#frame_Balances { /* Upper left side */
 min-width:400px;
-background-color:#ffffff;
+background-color: rgba(0,0,0,50);
+border-bottom: 3px solid rgba(0,0,0,70);
+border-radius: 10px;
+border-right: 3px solid rgba(0,0,0,70);
+/*background-color:#ffffff;*/
 }
 
 QWidget .QFrame#frame_ZerocoinBalances { /* Lower left side */
 min-width:400px;
-background-color:#ffffff;
+background-color: rgba(0,0,0,50);
+border-bottom: 3px solid rgba(0,0,0,70);
+border-radius: 10px;
+border-right: 3px solid rgba(0,0,0,70);
+/*background-color:#ffffff;*/
 }
 
 QWidget .QFrame#frame_CombinedBalances { /* Lower left side */
 min-width:400px;
-background-color:#ffffff;
+background-color: rgba(0,0,0,50);
+border-bottom: 3px solid rgba(0,0,0,70);
+border-radius: 10px;
+border-right: 3px solid rgba(0,0,0,70);
+/*background-color:#ffffff;*/
 }
 
 QWidget .QFrame#frame_RecentTransactions { /* Right side */
 min-width:400px;
-background-color:#ffffff;
+background-color: rgba(0,0,0,50);
+border-bottom: 3px solid rgba(0,0,0,70);
+border-radius: 10px;
+border-right: 3px solid rgba(0,0,0,70);
+/*background-color:#ffffff;*/
 }
 
 QWidget .QFrame#frame_Balances > .QLabel {

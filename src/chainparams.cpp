@@ -132,9 +132,10 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // auryn: 1 day
+        nTargetTimespan = 1 * 60; // auryn: 1 day
+        //nTargetTimespan = 24 * 60 * 60; // auryn: 1 day
         nTargetSpacing = 60;  // auryn: 1 minute
-        nMaturity = 15;
+        nMaturity = 50;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 5000000 * COIN;
 
